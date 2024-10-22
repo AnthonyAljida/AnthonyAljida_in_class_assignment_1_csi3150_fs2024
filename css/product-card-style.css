@@ -1,0 +1,120 @@
+/* Base configuration and layout */
+/* ------------------------------------------------------ */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  --black: black;
+  --light-gray: lightgray;
+}
+
+body {
+  height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  background-color: var(--black);
+}
+/* Product Card Styles */
+.product-card {
+  background-color: white;
+  width: 800px;
+  height: 500px;
+  margin-bottom: 120px;
+  display: flex;
+}
+
+/* Left Image Column */
+.left-img-col {
+  flex: 1;
+}
+
+.left-img-col img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+/* Right Information Column */
+.right-info-col {
+  flex: 1;
+  padding: 20px;
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; */
+}
+
+.right-info-col h3 {
+  color: var(--black);
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+.right-info-col h5 {
+  color: var(--light-gray);
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.right-info-col p {
+  font-size: 14px;
+  padding-left: 50px;
+  margin-bottom: 20px;
+}
+
+/* Available Colors Section */
+.available-colors {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: space-evenly;
+
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.black-color-container {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: black;
+}
+
+.red-color-container {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: red;
+}
+
+.white-color-container {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: beige;
+}
+.price {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.price h4 {
+  font-size: 32px;
+  font-weight: 900ß;
+}
+.buy-btn {
+  border-radius: 15px;
+  color: white;
+  background-color: black;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 50px;
+  padding-right: 50px;
+  font-size: 14px;
+}
